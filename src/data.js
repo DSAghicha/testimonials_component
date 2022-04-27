@@ -1,4 +1,4 @@
-[
+export const testimonials = [
     {
         "name":"Daniel Clifford",
         "img":"image-daniel.jpg",
