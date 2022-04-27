@@ -1,0 +1,61 @@
+@use '../../sass' as *
+
+.card
+    font-size: $font__s400
+    padding: 2rem
+    background: $clr__p400
+    color: $clr__w100
+    border-radius: 0.8rem
+    box-shadow: hsla(219, 29%, 14%, 25%) 0px 20px 30px -10px
+
+    &:nth-child(1)
+        background: $clr__p400 url("../../images/bg-pattern-quotation.svg") no-repeat top 10% right 10%
+        grid-area: one
+    
+    &:nth-child(2)
+        background: $clr__s400
+        grid-area: two
+
+    &:nth-child(3)
+        background: $clr__w200
+        color: $clr__s500
+        grid-area: three
+    
+    &:nth-child(4)
+        background: $clr__s500
+        grid-area: four
+    
+    &:nth-child(5)
+        background: $clr__w200
+        color: $clr__s500
+        grid-area: five
+    
+    &__top
+        display: flex
+        gap: 1rem
+
+        img
+            width: 2.75rem
+            aspect-ratio: 1
+            border-radius: 50%
+    
+    &__userInfo
+        line-height: 1
+
+        &__name
+            font-size: $font__s400
+            font-weight: $font__w700
+        
+        &__status
+            font-size: $font__s400
+            font-weight: $font__w700
+            margin: 0
+            opacity: 50%
+    
+    &__title
+        font-size: $font__s500
+        line-height: 1.2
+    
+    &__description
+        font-size: 15px
+        opacity: 0.7
